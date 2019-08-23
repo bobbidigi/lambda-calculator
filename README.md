@@ -63,7 +63,6 @@ Add the data to state like this:
 
 ```js
 import { numbers } from '../path/to/data';
-
 ...
 
 
