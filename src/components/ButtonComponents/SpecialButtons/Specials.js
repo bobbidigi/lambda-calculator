@@ -7,11 +7,11 @@ import SpecialButton from './SpecialButton'
 
 const Specials = () => {
   // STEP 2 - add the imported data to state
-  const [specialBtn, updateSpecial] = useState(specials)
+  const [specialBtn] = useState(specials)
   return (
     <div>
-      {specialBtn.map(item =>
-        <SpecialButton text={item} />
+      {specialBtn.map((item, index) =>
+        <SpecialButton key={index} text={item} />
       )}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
